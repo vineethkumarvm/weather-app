@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://kit.fontawesome.com/658a2921bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="sect">
+    <div>
+      <form action="{{url_for('index')}}" method="POST">
+        <div class="box">
+          <p>For Weather Update</p>
+          <input type="text" name="weathers">
+          <h1>{{tempe}}</h1>
+        </div>
+      </form>
+    </div>
+ </section>
+ <section >
+      <div class="last">
+          <div><h4>VISIBILITY</h4><a href="">{{vis}}km</a></div>
+          <div><h4>HUMIDITY</h4><a href="">{{hum}}%</a></div>
+          <div><h4>PRESSURE</h4><a href="">{{pre}}</a></div>
+          <div><h4>WINDSPEED</h4><a href="">{{win}}km/hr</a>
+      </div>
+ </section>
+ <section>
+        <div id="location"><i class="fa-sharp fa-solid fa-location-pin"></i>{{data}}</div>
+        
+ </section>
+</body>
+</html>
